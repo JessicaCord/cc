@@ -122,6 +122,20 @@ nav a {
     padding: 4px 12px;
 }
 
+footer {
+
+}
+
+footer img {
+    
+}
+
+footer p {
+color: var(--white);
+}
+
+
+
 /* _________________________________________________ */
 /* Tablet */
 @media (min-width: 650px) {
