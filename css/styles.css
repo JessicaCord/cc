@@ -74,7 +74,13 @@ header img {
 }
 
 header h1 {
+    font-size: 1.75rem;
+    max-width: 220px;
     margin: 10px auto;
+}
+
+h3 {
+    font-weight: bold;
 }
 
 nav {
@@ -90,25 +96,27 @@ nav a {
     color: var(--white);
     text-decoration: none;
     text-transform: uppercase;
+    font-size: 0.75rem;
 }
 
-.opening {
+.openingsection {
     background-color: var(--white);
     padding: 35px 20px;
-     border-top: 4px solid var(--Sunglow);
+    border-top: 4px solid var(--Sunglow);
+       border-bottom: 4px solid var(--Sunglow);
 }
 
-.opening img {
+.openingsection img {
     display: block;
     width: 100%;
     height: auto;
 }
 
-.opening h2 {
+.openingsection h2 {
     margin: 25px 0;
 }
 
-.opening p {
+.openingsection p {
     margin-bottom: 25px;
 }
 
@@ -122,22 +130,72 @@ nav a {
     padding: 4px 12px;
 }
 
-footer {
+.ourcoffee {
+    background-color: var(--LightBlue);
+    padding: 25px 20px;
+}
 
+.ourcoffee h2 {
+    margin: 15px 0 35px;
+}
+
+.coffee-items {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.coffee-item {
+    min-width: 0;
+}
+
+.coffee-item h3 {
+    margin: 15px 0;
+}
+
+.coffee-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.coffee-item p {
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+.button1 {
+    display: inline-block;
+    background-color: var(--Catalina);
+    color: var(--white);
+    border-radius: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 4px 12px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px 20px;
 }
 
 footer img {
-    
+    display: block;
+    width: 180px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
 }
 
 footer p {
-color: var(--white);
+    color: var(--white);
+    font-size: 0.75rem;
+    margin-top: 15px;
 }
 
-
-
-/* _________________________________________________ */
-/* Tablet */
+/* __________________________________________ */
+/* Tablet (min-width: 650px) */
 @media (min-width: 650px) {
     header {
         display: flex;
@@ -155,6 +213,7 @@ color: var(--white);
     }
 
     header h1 {
+        font-size: 2rem;
         max-width: none;
         margin: 0;
         white-space: nowrap;
@@ -167,28 +226,48 @@ color: var(--white);
         gap: 20px;
     }
 
-.opening {
-    display: flex;
-    align-items: stretch;
-    gap: 0;
-    padding: 0;
+    nav a {
+        font-size: 1rem;
+    }
+
+    .openingsection {
+        display: flex;
+        align-items: stretch;
+        gap: 0;
+        padding: 0;
+    }
+
+    .openingsection img {
+        width: 50%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .opening-text {
+        flex: 1;
+        min-width: 0;
+        padding: 20px 15px;
+    }
+
+    .coffee-items {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .coffee-item {
+        flex: 0 0 calc((100% - 20px) / 2);
+    }
+
+    .coffee-item img {
+        height: 180px;
+        object-fit: cover;
+    }
 }
 
-.opening img {
-    width: 50%;
-    height: auto;
-    object-fit: cover;
-}
-
-.opening-text {
-    flex: 1;
-    min-width: 0;
-    padding: 20px 15px;
-}
-/* _________________________________________________ */
-/* Desktop */
+/* __________________________________________ */
+/* Desktop (min-width: 1000px) */
 @media (min-width: 1000px) {
-
     header {
         max-width: 900px;
         margin: 0 auto;
@@ -217,14 +296,14 @@ color: var(--white);
         font-size: 0.75rem;
     }
 
-    .opening {
+    .openingsection {
         max-width: 900px;
         margin: 0 auto;
-        align-items: center;
+        align-items: stretch;
         padding: 0;
     }
 
-    .opening img {
+    .openingsection img {
         width: 50%;
         object-fit: cover;
     }
@@ -232,5 +311,71 @@ color: var(--white);
     .opening-text {
         flex: 1;
         padding: 20px 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .ourcoffee {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 25px 20px;
+        border-bottom: 4px solid var(--Sunglow);
+    }
+
+    .ourcoffee h2 {
+        margin: 15px 0 35px;
+    }
+
+    .coffee-items {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 12px;
+    }
+
+    .coffee-item {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .coffee-item h3 {
+        font-size: 1rem;
+        font-weight: 700;
+        white-space: nowrap;
+        margin: 15px 0;
+    }
+
+    .coffee-item img {
+        display: block;
+        width: 100%;
+        height: 135px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .coffee-item p {
+        font-size: 0.875rem;
+        line-height: 1.5;
+    }
+
+    .coffee-item .button1 {
+        font-size: 0.65rem;
+        white-space: nowrap;
+        padding: 5px 8px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 25px 20px;
+    }
+
+    footer img {
+        width: 180px;
+    }
+
+    footer p {
+        font-size: 0.75rem;
     }
 }
