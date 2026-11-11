@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Ovo&display=swap');
+
+:root {
+  --black: #000000;
+  --Catalina: #06327d;
+  --Bluetiful: #2b70e4;
+  --Vegan: #209d5c;
+  --Sunglow: #ffd034;
+  --white: #ffffff;
+  --LightBlue: #cadbf8;
+  --line-height: 1.1667;
+  --font-weight: 300;
+  --text-transform: uppercase;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  color: var(--black);
+  background-color: #063270;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: var(--line-height);
+    font-weight: var(--font-weight);
+    text-transform: var(--text-transform);
+    margin: 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+    line-height: var(--line-height);
+    font-weight: var(--font-weight);
+    text-transform: var(--text-transform);
+}
+
+h3 {
+    font-size: 1.75rem;
+    line-height: var(--line-height);
+    font-weight: var(--font-weight);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ___________________________________________________________ */
+/* Mobile (max-width: 649px) */
+header {
+    background-color: var(--Catalina);
+    color: var(--white);
+    text-align: center;
+    padding: 20px;
+}
+
+header img {
+    display: block;
+    width: 70px;
+    margin: 0 auto;
+}
+
+header h1 {
+    margin: 10px auto;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-width: 220px;
+    margin: 0 auto;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.opening {
+    background-color: var(--white);
+    padding: 35px 20px;
+     border-top: 4px solid var(--Sunglow);
+}
+
+.opening img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.opening h2 {
+    margin: 25px 0;
+}
+
+.opening p {
+    margin-bottom: 25px;
+}
+
+.button {
+    display: inline-block;
+    background-color: var(--Vegan);
+    color: var(--white);
+    border-radius: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 4px 12px;
+}
+
+/* _________________________________________________ */
+/* Tablet */
+@media (min-width: 650px) {
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        column-gap: 15px;
+        row-gap: 10px;
+        padding: 20px;
+    }
+
+    header img {
+        width: 100px;
+        margin: 0;
+    }
+
+    header h1 {
+        max-width: none;
+        margin: 0;
+        white-space: nowrap;
+    }
+
+    nav {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        gap: 20px;
+    }
+
+.opening {
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+    padding: 0;
+}
+
+.opening img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+.opening-text {
+    flex: 1;
+    min-width: 0;
+    padding: 20px 15px;
+}
+/* _________________________________________________ */
+/* Desktop */
+@media (min-width: 1000px) {
+
+    header {
+        max-width: 900px;
+        margin: 0 auto;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 15px 10px;
+    }
+
+    header img {
+        width: 75px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav {
+        width: auto;
+        flex-wrap: nowrap;
+        margin-left: auto;
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 0.75rem;
+    }
+
+    .opening {
+        max-width: 900px;
+        margin: 0 auto;
+        align-items: center;
+        padding: 0;
+    }
+
+    .opening img {
+        width: 50%;
+        object-fit: cover;
+    }
+
+    .opening-text {
+        flex: 1;
+        padding: 20px 15px;
+    }
+}
