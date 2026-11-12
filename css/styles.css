@@ -73,8 +73,8 @@ header img {
     margin: 0 auto;
 }
 
-header h1 {
-    font-size: 1.75rem;
+h1 {
+    /* font-size: 1.75rem; */
     max-width: 220px;
     margin: 10px auto;
 }
@@ -96,27 +96,27 @@ nav a {
     color: var(--white);
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 0.75rem;
+    /* font-size: 0.75rem; */
 }
 
-.openingsection {
+.opening {
     background-color: var(--white);
     padding: 35px 20px;
     border-top: 4px solid var(--Sunglow);
-       border-bottom: 4px solid var(--Sunglow);
+    border-bottom: 4px solid var(--Sunglow);
 }
 
-.openingsection img {
+.opening img {
     display: block;
     width: 100%;
     height: auto;
 }
 
-.openingsection h2 {
+h2 {
     margin: 25px 0;
 }
 
-.openingsection p {
+.opening p {
     margin-bottom: 25px;
 }
 
@@ -213,7 +213,6 @@ footer p {
     }
 
     header h1 {
-        font-size: 2rem;
         max-width: none;
         margin: 0;
         white-space: nowrap;
@@ -226,27 +225,23 @@ footer p {
         gap: 20px;
     }
 
-    nav a {
-        font-size: 1rem;
-    }
-
-    .openingsection {
+    .opening {
         display: flex;
         align-items: stretch;
         gap: 0;
         padding: 0;
     }
 
-    .openingsection img {
+    .opening img {
         width: 50%;
         height: auto;
-        object-fit: cover;
+        /* object-fit: cover; */
     }
 
     .opening-text {
-        flex: 1;
+        /* flex: 1; */
         min-width: 0;
-        padding: 20px 15px;
+        padding: 20px;
     }
 
     .coffee-items {
@@ -260,8 +255,8 @@ footer p {
     }
 
     .coffee-item img {
-        height: 180px;
-        object-fit: cover;
+        /* height: 180px; */
+        /* object-fit: cover; */
     }
 }
 
@@ -273,40 +268,41 @@ footer p {
         margin: 0 auto;
         flex-wrap: nowrap;
         justify-content: space-between;
-        gap: 10px;
-        padding: 15px 10px;
+        align-items: flex-end;
+        /* gap: 15px; */
+        /* padding: 15px 10px; */
     }
 
-    header img {
+    /* header img {
         width: 75px;
-    }
+    } */
 
-    header h1 {
+    /* h1 {
         font-size: 2rem;
-    }
+    } */
 
     nav {
         width: auto;
         flex-wrap: nowrap;
         margin-left: auto;
-        gap: 10px;
+        /* gap: 10px; */
     }
 
-    nav a {
+    /* nav a {
         font-size: 0.75rem;
-    }
+    } */
 
-    .openingsection {
+    .opening {
         max-width: 900px;
         margin: 0 auto;
         align-items: stretch;
-        padding: 0;
+        /* padding: 0; */
     }
 
-    .openingsection img {
+    /* .opening img {
         width: 50%;
         object-fit: cover;
-    }
+    } */
 
     .opening-text {
         flex: 1;
@@ -352,16 +348,14 @@ footer p {
         width: 100%;
         height: 135px;
         object-fit: cover;
-        border-radius: 8px;
+        border-radius: 10px;
     }
 
-    .coffee-item p {
-        font-size: 0.875rem;
-        line-height: 1.5;
-    }
+    /* .coffee-item p {
+        /* line-height: 1.5; */
+    } */
 
     .coffee-item .button1 {
-        font-size: 0.65rem;
         white-space: nowrap;
         padding: 5px 8px;
     }
@@ -373,9 +367,5 @@ footer p {
 
     footer img {
         width: 180px;
-    }
-
-    footer p {
-        font-size: 0.75rem;
     }
 }
