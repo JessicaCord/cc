@@ -60,12 +60,12 @@ h3 {
 
 /* ___________________________________________________________ */
 /* Mobile (max-width: 649px) */
-
 header {
     background-color: var(--Catalina);
     color: var(--white);
     text-align: center;
     padding: 25px 20px;
+    border-bottom: 4px solid var(--Sunglow);
 }
 
 header img {
@@ -102,7 +102,6 @@ nav a {
 .opening {
     background-color: var(--white);
     padding: 35px 20px;
-    border-top: 4px solid var(--Sunglow);
 }
 
 .opening img {
@@ -180,7 +179,6 @@ nav a {
 }
 
 footer {
-    background-color: var(--Catalina);
     text-align: center;
     padding: 25px 20px;
 }
